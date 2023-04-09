@@ -1,0 +1,74 @@
+.loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;  
+  height: 100vh;
+  background-color: #F7BB97;
+  display: flex;
+  align-items: center;
+}
+
+.board{
+  width: 20rem;
+  height: fit-content;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.568);
+  transition: opacity 0.4s;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+
+.title {
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+         
+.start_btn {
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+  padding: 1rem 3rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 18px #eee;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.start_btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.start_btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12px;
+}
+
+.progress_value {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(0 0 0 / 50%);
+  transition: width 0.4s;
+}
+
+
