@@ -91,7 +91,7 @@ export default function Experience() {
       {/* <OrbitControls enableZoom={false}/> */}
       <group ref={cameraGroup}>
         <Background/>
-        <PerspectiveCamera position={[-2, 5, 40]} fov={60} makeDefault />
+        <PerspectiveCamera position={[0, 5, 40]} fov={60} makeDefault />
         <group ref={bird}>
           <Float floatIntensity={10} speed={10}>
             <Bird 
